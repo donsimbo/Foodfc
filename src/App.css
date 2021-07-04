@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+#root{
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "header header header header header"
+  "sidebar main main main main"
+  "sidebar footer footer footer footer"
+  ;
+}
+
+.Header {
+grid-area: header;
+height: 10vh;
+background: navy;
+}
+
+.Sidebar{
+  grid-area: sidebar;
+  height: 90vh;
+  background: whitesmoke;
+  text-align: center;
+  
+}
+.Sidebar ul li{
+  padding-top: 8px;
+  margin-top: 15px;
+  font-family: calibri regular;
+}
+.Sidebar a{
+  text-decoration: none;
+}
+
+.Menu{
+  grid-area: main;
+  height: 80vh;
+  background: darkorange;
+}
+
+.Home{
+  grid-area: main;
+  height: 80vh;
+  background: royalblue;
+}
+
+.Footer{
+  grid-area: footer;
+  height: 10vh;
+  background: #e2293f;
+}
